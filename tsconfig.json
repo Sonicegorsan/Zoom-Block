@@ -3,9 +3,10 @@
   "include": ["src/**.ts"],
   "compilerOptions": {
     "outDir": "dist",
-    "types": ["chrome-types"],
-    "lib": ["es2023", "dom"],
-    "module": "ESNext",
-    "moduleResolution": "Node"
-  }
+    "lib": ["es2023", "dom"]
+  },
+  "references": [
+    { "path": "./tsconfig.build.json" },
+    { "path": "./tsconfig.spec.json" }
+  ]
 }

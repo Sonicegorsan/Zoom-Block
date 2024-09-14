@@ -21,7 +21,7 @@
 
 type ChromeType = typeof chrome;
 
-class ZoomBlock {
+export class ZoomBlock {
   private browser: ChromeType;
   private popup: string;
   private images: Map<string, Record<string, string>>;
@@ -165,5 +165,3 @@ class ZoomBlock {
     }
   }
 }
-
-new ZoomBlock(chrome).addListeners();
